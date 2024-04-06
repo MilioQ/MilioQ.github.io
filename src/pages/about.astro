@@ -4,44 +4,41 @@ import PageLayout from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
 
 const meta = {
-	description: "I'm a starter theme for Astro.build",
 	title: "About",
 };
 ---
 
 <PageLayout meta={meta}>
-	<div class="space-y-6">
-		<h1 class="title">About</h1>
-		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
-		</p>
-		<div class="flex justify-center">
-			<Image
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				fetchpriority="high"
-				loading="eager"
-				src={aboutImg}
-			/>
+	<h1 class="title" style="margin-bottom: 10px;">Sobre mí</h1>
+	<div style="display:flex">
+		<div style="width:60%  ">
+			<div>
+				<p class="mb-4">
+					¡Hola! Soy Jesús Emilio Quintero Aguilar a.k.a Milio. Soy Ingeniero en Sistemas
+					Computacionales, apasionado por el desarrollo de software tanto en el BackEnd como en el
+					FrontEnd. Con experiencia en una variedad de lenguajes y tecnologías, desde C++ y C# hasta
+					Python y Spring Boot, siempre estoy buscando nuevos desafíos para crecer profesionalmente.
+				</p>
+				<p>
+					Desde mis días de estudiante, he estado inmerso en el mundo laboral. Mis primeros pasos
+					fueron en SuKarne, donde durante 8 meses tuve la oportunidad de desempeñar tareas de
+					FullStack. Actualmente, formo parte del equipo grupo Coppel, donde me dedico
+					principalmente al BackEnd y en ocasiones al FrontEnd. Con más de año y medio en este
+					puesto, cada día es una nueva oportunidad para aprender y crecer.
+				</p>
+			</div>
 		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
+		<div style="width:40%">
+			<img src="@/assets/SobreMi.jpg" />
+		</div>
+	</div>
+	<div style="margin-top: 20px;">
 		<p>
-			Clone or fork my <a
-				aria-label="github repository"
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				rel="noopener noreferrer"
-				target="_blank">repo</a
-			> if you like me!
+			Fuera del ámbito profesional, tengo una serie de intereses que me mantienen equilibrado y
+			feliz. Soy un entusiasta de la fotografía analógica, donde estoy explorando mi creatividad y
+			mejorando mis habilidades como principiante. Además, me encanta sumergirme en el mundo de los
+			videojuegos, jugar SoftBall con amigos, y pasar horas construyendo con Legos y resolviendo
+			rompecabezas.
 		</p>
 	</div>
 </PageLayout>
