@@ -1,8 +1,8 @@
 ---
-import aboutImg from "@/assets/about-astro.png";
+import aboutImg from "@/assets/AboutMe.png";
 import PageLayout from "@/layouts/Base.astro";
 import { Image } from "astro:assets";
-
+import "../styles/global.css";
 const meta = {
 	title: "About",
 };
@@ -10,8 +10,8 @@ const meta = {
 
 <PageLayout meta={meta}>
 	<h1 class="title" style="margin-bottom: 10px;">Sobre mí</h1>
-	<div style="display:flex">
-		<div style="width:60%  ">
+	<div style="display:flex; ">
+		<div style="width:60% ;padding-right: 10px; ">
 			<div>
 				<p class="mb-4">
 					¡Hola! Soy Jesús Emilio Quintero Aguilar a.k.a Milio. Soy Ingeniero en Sistemas
@@ -28,8 +28,8 @@ const meta = {
 				</p>
 			</div>
 		</div>
-		<div style="width:40%">
-			<img src="@/assets/SobreMi.jpg" />
+		<div style="width:40% ">
+			<Image alt="" src={aboutImg} />
 		</div>
 	</div>
 	<div style="margin-top: 20px;">
